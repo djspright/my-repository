@@ -9,8 +9,10 @@ $git_state\
 $git_status\
 $git_metrics\
 $fill\
+$c\
 $conda\
 $python\
+$java\
 $lua\
 $rust\
 \n$character\
@@ -118,13 +120,26 @@ format = """
 
 [fill]
 symbol = '─'
-style = 'fg:#eee8d5 bg:none'
+style = 'fg:#89b4fa) bg:none'
+
+[c]
+symbol = "[ ](fg:#1e66f5 bg:#89b4fa)"
+format = '[](fg:#89b4fa)[ ${symbol}(${version})]($style)[](fg:#89b4fa)'
+style = 'bold fg:#313244 bg:#89b4fa'
 
 [python]
 pyenv_version_name = false
 symbol = '[ ](fg:#f9e2af bg:#8093fd)'
 format = '[](fg:#8093fd)[ ${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)[](fg:#8093fd)'
 style = 'bold fg:#313244 bg:#8093fd'
+
+[java]
+symbol = "[ ](fg:#cd853f bg:#f5deb3)"
+format = '[](fg:#f5deb3)[ ${symbol}(${version})]($style)[](fg:#f5deb3)'
+style = 'bold fg:#313244 bg:#f5deb3'
+# detect_files = []
+# detect_folders = []
+# command = 'java-Xinternalversion'
 
 [lua]
 symbol = "[ ](fg:#1e66f5 bg:#89b4fa)"
@@ -149,3 +164,7 @@ time_format = '%T'
 [character]
 success_symbol = "[❯](bold #74c7ec)[❯](bold #b4befe)[❯](bold #89b4fa)"
 error_symbol = "[❯](bold #eba0ac)[❯](bold #f38ba8)[❯](bold #f17497)"
+
+
+
+
