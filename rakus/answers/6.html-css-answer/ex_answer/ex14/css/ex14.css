@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+body{
+	background-image:url('../img/check.gif');
+	background-color:#CBE7FF; /*背景画像にしているのでいらないかも*/
+	padding-top:60px; /*全体の上の余白*/
+	padding-bottom:40px; /*全体の下の余白*/
+}
+
+/*htmlにdivタグのid=containerを追加してから*/
+div#container{
+	background-color:#ffffff; /*背景を白に*/
+	width:700px; /*横幅指定 好きな値で良い*/
+	margin:0 auto; /*中央揃え*/
+	padding:20px; /*白背景部分 上下左右の余白*/
+}
+
+/*
+ 写真にclass="okierabu"を追加してから
+ idでも良いが今回あえてclassにする
+*/
+img.okierabu{
+	float:right;/*画像を右側へ leftでも試す*/
+	margin:0 0 0 30px; /*画像左の文字との間隔を空ける paddingでも同じだった*/
+}
+
+p{
+	line-height:1.5em; /*150%でも同じ*/
+	text-indent:1em; /*インデントを1文字分下げる*/
+	font-size:14px; /*標準より少し小さめに*/
+	margin:10px; /*上下左右の余白*/
+}
+
+h1{
+	color:#0850B2; /*文字色を青系に*/
+	font-size:30px; /*標準より少し小さめに*/
+}
+
+h2{
+	color:#0850B2; /*文字色を青系に*/
+	border-left:#0850B2 solid 8px; /*左ライン設定*/
+	font-size:20px;
+	text-indent:0.5em; /*padding:0 0 0 10px;これでもいける*/
+	height:20px; /*少し上下にpaddingをつけたいので*/
+	padding:5px 0; /*上下の余白*/
+	letter-spacing:3px; /*文字の間隔を指定*/
+}
+
+h3{
+	color:#7C3DCA;
+	background-color:#CBE7FF;
+	border-top:#000000 dotted 1px; /*上の破線*/
+	border-bottom:#000000 dotted 1px; /*下の破線*/
+	padding:5px; /*上下左右の余白*/
+	font-size:17px;
+}
+
+h4{
+	color:#89EAE9;
+}

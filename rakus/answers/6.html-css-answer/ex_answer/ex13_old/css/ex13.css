@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+div {
+	/* テーブル要素にする */
+	display: table;
+}
+
+span {
+	/* テーブルのセルにする */
+	display: table-cell;
+	/* 左右方向の中央揃え */
+	text-align: center;
+	/* 上下方向の中央揃え */
+	vertical-align: middle;
+}
+
+div#header {
+	width: 900px;
+	height: 80px;
+	background-color: #F2D8DF;
+}
+
+div#side {
+	width: 280px;
+	height: 500px;
+	background-color: #009933;
+	float: left; /*左に回り込み*/
+}
+
+div#main {
+	width: 620px;
+	height: 500px;
+	background-color: #66ffff;
+	float: left; /*左に回り込み*/
+}
+
+div#footer {
+	width: 900px;
+	height: 60px;
+	background-color: #FFEF85;
+	clear: both; /* 回り込みをクリア。floatレイアウトした場合は後続でこれを書かないとおかしくなる */
+}

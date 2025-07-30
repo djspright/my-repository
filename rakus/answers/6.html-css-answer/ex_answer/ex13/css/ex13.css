@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+header, div, footer {
+	/* テーブル要素にする */
+	display: table;
+}
+
+span {
+	/* テーブルのセルにする */
+	display: table-cell;
+	/* 左右方向の中央揃え */
+	text-align: center;
+	/* 上下方向の中央揃え */
+	vertical-align: middle;
+}
+
+header {
+	width: 900px;
+	height: 80px;
+	background-color: #F2D8DF;
+}
+
+.section1 {
+	width: 280px;
+	height: 500px;
+	background-color: #009933;
+}
+
+.section2 {
+	width: 620px;
+	height: 500px;
+	background-color: #66ffff;
+}
+
+footer {
+	width: 900px;
+	height: 60px;
+	background-color: #FFEF85;
+}
+
+.main {
+	display: flex;
+}

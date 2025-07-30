@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+header {
+	width: 900px;
+	height: 80px;
+	background-color: #F2D8DF;
+}
+
+.section1 {
+	width: 280px;
+	height: 500px;
+	background-color: #009933;
+}
+
+.section2 {
+	width: 620px;
+	height: 500px;
+	background-color: #66ffff;
+}
+
+footer {
+	width: 900px;
+	height: 60px;
+	background-color: #FFEF85;
+}
+
+/* flexboxを使用してmainクラス内の要素を横並びにする */
+.main {
+	display: flex;
+}

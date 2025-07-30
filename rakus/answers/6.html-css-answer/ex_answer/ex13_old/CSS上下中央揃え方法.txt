@@ -1,0 +1,27 @@
+・左右中央寄せにする「text-align」が効くのは「ブロック要素」の内側　例えば<p>や<div>,<tabel>,<td>タグ等
+・上下中央寄せにする「vertical-align」が効くのは「テーブルセル」　　<td>タグ
+
+そのため、<div>を<table>、中身の<span>を<td>の代わりにして処理を行う。
+
+
+display:table;
+　・・・<table>要素にする
+display:table-cell; 
+　・・・<td>要素にする
+
+
+
+上記を実際に書くとーーーーーーーーーーーーーーーー
+*html
+　<div><span>中央揃えにしたいテキスト</span></div>
+
+*css
+　div{
+　　　display: table;
+　}
+　span {
+　　　display: table-cell;
+　　　vertical-align: middle;
+　　　text-align: center;
+　}
+ーーーーーーーーーーーーーーーーーーーーーーーーー
